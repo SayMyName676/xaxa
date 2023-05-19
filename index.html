@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Xaxa Platform</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="script.js"></script>
+  <script src="dark-mode.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Xaxa Platform</h1>
+    <nav>
+      <div class="menu-toggle">&#9776;</div>
+      <ul class="nav-menu">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Explore</a></li>
+        <li><a href="#">Upload</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Sign Up</a></li>
+      </ul>
+    </nav>
+    <div class="dark-mode-toggle">
+      <input type="checkbox" id="darkModeToggle">
+      <label for="darkModeToggle"></label>
+    </div>
+    <div class="view-toggle">
+      <button class="grid-view">Grid View</button>
+      <button class="list-view">List View</button>
+    </div>
+  </header>
+  
+  <main>
+    <section id="posts" class="list-view">
+      <!-- Posts content will be dynamically added here -->
+    </section>
+    <div id="post-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img id="modal-image" src="" alt="">
+        <div id="modal-details"></div>
+      </div>
+    </div>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 Xaxa Platform. All rights reserved.</p>
+  </footer>
+  
+  <div class="post-overlay" id="postOverlay">
+    <div class="post-popup">
+      <!-- Content of the post in the pop-up view -->
+    </div>
+  </div>
+</body>
+</html>
